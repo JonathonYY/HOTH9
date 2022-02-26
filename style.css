@@ -19,10 +19,11 @@
     font-size: 20px;
 }
 .banner-text h2{
+    font-style: italic;
     text-align: center;
     color: #fff;
     font-size: 50 px;
-    margin-top: 10;
+    margin-top: 20px;
 }
 
 .animation-area{
