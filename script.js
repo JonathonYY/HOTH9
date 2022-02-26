@@ -5,6 +5,13 @@ function myFunction(){
 }
 
 function playAudio() {
-    let audio = document.getElementById("audio");
+    const audio = document.getElementById("audio");
     audio.play();
+    if (audio.loop == false)
+        audio.loop = true;
+    else {
+        audio.loop = false;
+        audio.pause();
+        audio.currentTime = 0;
+    }
 }
