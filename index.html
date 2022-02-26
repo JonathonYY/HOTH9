@@ -6,11 +6,7 @@
         <script src="script.js"></script>
     </head>
 
-    <audio>
-        <source src="test.mp3" type="audio/mpeg">
-    </audio>
-
-    <body>
+    <body>        
         <div class="banner-text">
             <ul>
                 <!--
@@ -24,12 +20,18 @@
             </ul>
 
             <h2>WELCOME</h2>
-            <p class="normal">TESTING, TESTING, 123</p>
-            
+        </div>
+
+        <div id="player">
+            <audio autoplay>
+             <source src="test.mp3" type="audio/mpeg">
+             <embed src="test.mp3" hidden="true"> 
+            </audio>
         </div>
         
         <div class = "animation-area">
             <ul class="box-area">
+                <button type="centered-button" onClick="myFunction()">Begin</button>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -38,5 +40,6 @@
                 <li></li>
             </ul> 
          </div>
+        
     </body>
 </html>
